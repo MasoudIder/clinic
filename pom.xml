@@ -43,8 +43,8 @@
     </build>
 
     <scm>
-        <developerConnection></developerConnection>
-        <tag></tag>
+        <developerConnection>scm:git:git@github.com:MasoudIder/clinic.git</developerConnection>
+        <tag>pet_clinic-0.0.1</tag>
     </scm>
 
 </project>
