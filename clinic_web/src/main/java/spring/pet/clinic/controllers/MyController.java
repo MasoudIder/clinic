@@ -7,8 +7,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MyController {
 
     @RequestMapping({"/",""})
-    public String index(){
+    public String mainIndex(){
         return "index";
+    }
+
+    @RequestMapping("/vets")
+    public String vetList(){
+        return "vets/index";
+    }
+
+    @RequestMapping("/owners")
+    public String ownerList(){
+        return "owners/index";
     }
 
 }
