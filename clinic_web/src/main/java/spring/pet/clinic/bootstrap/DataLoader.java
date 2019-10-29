@@ -6,8 +6,6 @@ import spring.pet.clinic.model.Owner;
 import spring.pet.clinic.model.Vet;
 import spring.pet.clinic.services.OwnerService;
 import spring.pet.clinic.services.VetService;
-import spring.pet.clinic.services.map.OwnerServiceMap;
-import spring.pet.clinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {

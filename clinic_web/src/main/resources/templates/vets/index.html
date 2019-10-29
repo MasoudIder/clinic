@@ -5,6 +5,18 @@
     <title>List Of Vets</title>
 </head>
 <body>
-<h1 th:text="List_of_Vets">List of vets !</h1>
+<h1>List of vets !</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Family</th>
+    </tr>
+    <tr th:each="vet : ${vets}">
+        <td th:text="${vet.id}">123</td>
+        <td th:text="${vet.firstName}">Spring in Action</td>
+        <td th:text="${vet.lastName}">Wrox</td>
+    </tr>
+</table>
 </body>
 </html>
