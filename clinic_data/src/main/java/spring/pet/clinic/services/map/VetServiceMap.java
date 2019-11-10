@@ -7,7 +7,7 @@ import spring.pet.clinic.services.VetService;
 import java.util.Set;
 
 @Service
-public class VetServiceMap extends AbstractMapService<Vet,Integer> implements VetService {
+public class VetServiceMap extends AbstractMapService<Vet, Integer> implements VetService {
 
     @Override
     public Set<Vet> findAll() {

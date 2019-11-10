@@ -7,7 +7,7 @@ import spring.pet.clinic.services.OwnerService;
 import java.util.Set;
 
 @Service
-public class OwnerServiceMap extends AbstractMapService<Owner,Integer> implements OwnerService {
+public class OwnerServiceMap extends AbstractMapService<Owner, Integer> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
