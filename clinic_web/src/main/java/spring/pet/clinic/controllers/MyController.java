@@ -22,7 +22,7 @@ public class MyController {
         return "index";
     }
 
-    @RequestMapping("/vets")
+    @RequestMapping({"/vets","/vets.html"})
     public String vetList(Model model) {
         model.addAttribute("vets", vetService.findAll());
         return "vets/index";
@@ -32,6 +32,11 @@ public class MyController {
     public String ownerList(Model model) {
         model.addAttribute("owners", ownerService.findAll());
         return "owners/index";
+    }
+
+    @RequestMapping({"/owners/find","/oups"})
+    public String ownerFind() {
+        return "Notimplemented";
     }
 
 }
