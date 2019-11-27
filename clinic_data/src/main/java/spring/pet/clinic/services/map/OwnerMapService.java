@@ -10,12 +10,12 @@ import spring.pet.clinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
-public class OwnerServiceMap extends AbstractMapService<Owner, Integer> implements OwnerService {
+public class OwnerMapService extends AbstractMapService<Owner, Integer> implements OwnerService {
 
     private PetService petService;
     private PetTypeService petTypeService;
 
-    public OwnerServiceMap(PetService petService, PetTypeService petTypeService) {
+    public OwnerMapService(PetService petService, PetTypeService petTypeService) {
         this.petService = petService;
         this.petTypeService = petTypeService;
     }
